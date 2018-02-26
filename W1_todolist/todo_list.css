@@ -1,0 +1,123 @@
+body{
+	margin: auto;
+	width: 600px;
+	background-color: #f2f2f2;
+}
+
+/*let the setting of width and height include padding and border in all elements*/
+*{
+	box-sizing: border-box;
+}
+
+/*remove the default padding and margin*/
+ul{
+	margin: auto;
+	padding: 0;
+}
+
+ul li{
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	list-style-type: none;
+	background: #fff;
+	border: 2px solid #f2f2f2;
+	font-size: 20px;
+	transition: 0.2s;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul li:hover {
+	color: #a6a6a6;
+	background-color: #e6e6e6;
+}
+
+ul li:hover .close{
+	color: #ffcccc;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*change style of tasks which are checked*/
+ul li.checked{
+	padding: 12px 8px 12px 40px;
+	color: #a6a6a6;
+	text-decoration: line-through;
+}
+
+ul li.checked .check{
+	color: #9ae59a;
+}
+
+
+.check {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	left: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+	position: absolute;
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+	color: #fff;
+}
+
+
+.header{
+	padding: 2px;
+	color: #ffcccc;
+	text-align: center;
+	font-family: arial;
+	font-size: 50px;
+	width: 600px;
+}
+.header::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#checkAll{
+	background: #fff;
+	padding: 10px;
+	width: 6%;
+	color: #a6a6a6;
+	float: left;
+	text-align: center;
+	font-size: 20px;
+}
+
+#checkAll:hover{
+	background: #a6a6a6;
+	color: #555;
+}
+
+#remain{
+	background: #ffcccc;
+	font-size: 20px;
+	padding: 12px;
+	color: #8c8c8c;
+	width: 25%;
+	text-align: center;
+	float: right;
+	font-weight: bold;
+}
+
+
+input{
+	border: none;
+	width:94%;
+	padding: 10px 10px 10px 10px;
+	float: left;
+	font-size: 20px;	
+}
